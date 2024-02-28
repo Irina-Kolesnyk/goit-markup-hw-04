@@ -387,7 +387,7 @@ overflow: auto;
 transform: translateY(100%);
 transition: transform 250ms linear;
 }
-.our-portfolio-card:hover .our-portfolio-overlay {
+.our-portfolio-card: hover {
 transform: translateY(0%);
 }
 

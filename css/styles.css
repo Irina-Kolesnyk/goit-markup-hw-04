@@ -192,6 +192,7 @@ padding-bottom: 120px;
 display: flex;
 row-gap:48px;
 gap: 24px;
+
 }
 .visually-hidden {
 position: absolute;
@@ -240,6 +241,8 @@ margin-right: 24px;
 
 .advantages-icon {
 display: flex;
+row-gap: 48px;
+gap: 24px;
 }
 
 /* Our team */
@@ -346,13 +349,14 @@ row-gap: 48px;
 .our-portfolio-card {
 width: calc((100% - 48px) / 3); 
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-div-image {
 position: relative;
 overflow: hidden;
 }
-.our-portfolio-card:hover {
+.our-portfolio-card:hover .overlay {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 transform: translateY(0%);
 }
@@ -375,7 +379,7 @@ padding-bottom: 8px;
 padding-left: 16px;
 }
 
-.our-portfolio-overlay {
+.our-portfolio-card-overlay {
 position: absolute;
 top: 0;
 left: 0;
@@ -387,9 +391,7 @@ overflow: auto;
 transform: translateY(100%);
 transition: transform 250ms linear;
 }
-.our-portfolio-card: hover {
-transform: translateY(0%);
-}
+
 
 .our-portfolio-text-overlay {
 font-family: "Roboto", sans-serif;
@@ -408,8 +410,25 @@ transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-portfolio-card: hover {
-overlay: translateY(0%);
+
+.our-portfolio-text-overlay {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+padding: 40px 32px;
+position: absolute;
+top: 0;
+background-color: #4d5ae5;
+height: 100%;
+width: 100%;
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-portfolio-card:hover .our-portfolio-text-overlay {
+transform: translateY(0%);
 }
 .our-portfolio-list {
 font-weight: 400;

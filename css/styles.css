@@ -240,6 +240,9 @@ display: flex;
 row-gap: 48px;
 gap: 24px;
 }
+.advantages-icon-item {
+width: calc((100% - 72px) / 4);
+}
 
 /* Our team */
 .our-team {
